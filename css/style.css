@@ -370,7 +370,16 @@ h1, h2 {
   .shopCommonBlock .shopBlock .shopSlider__wrap {
     flex-direction: column; }
   .shopCommonBlock .shopBlock .shopSlider__common {
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+  .shopCommonBlock .shopBlock a .shopSlider__size, .shopCommonBlock .shopBlock a:hover .shopSlider__size {
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 194, 158, 0.5);
+    display: block;
+    text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.2); }
+  .shopCommonBlock .shopBlock a .shopSlider__showWrap, .shopCommonBlock .shopBlock a:hover .shopSlider__showWrap {
+    display: block !important; } }
 
 .shopCommonBlock .discoverShop {
   padding: 75px 0;
