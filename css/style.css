@@ -84,7 +84,7 @@ h1, h2 {
 .header {
   padding-top: 35px;
   height: 100vh;
-  background: url("../../img/header_bg.jpg") no-repeat center/cover; }
+  background: url("../img/header_bg.jpg") no-repeat center/cover; }
 
 .header__body {
   display: flex;
@@ -248,31 +248,31 @@ h1, h2 {
   background: rgba(53, 55, 56, 0.2); }
 
 .commonBlockOfBikes .commonBlockOfBikes__vintage .common__bg {
-  background: url("../../img/contain_logo1.jpg") no-repeat center/cover; }
+  background: url("../img/contain_logo1.jpg") no-repeat center/cover; }
 
 .commonBlockOfBikes .commonBlockOfBikes__vintage .common__block__bg {
-  background: url("../../img/bike1.jpg") no-repeat center/cover; }
+  background: url("../img/bike1.jpg") no-repeat center/cover; }
 
 .commonBlockOfBikes .commonBlockOfBikes__Boriosa .common__bg {
-  background: url("../../img/contain_logo2.jpg") no-repeat center/cover; }
+  background: url("../img/contain_logo2.jpg") no-repeat center/cover; }
 
 .commonBlockOfBikes .commonBlockOfBikes__Boriosa .common__block__bg {
-  background: url("../../img/bike2.jpg") no-repeat center/cover; }
+  background: url("../img/bike2.jpg") no-repeat center/cover; }
 
 .commonBlockOfBikes .commonBlockOfBikes__Retro .commonBlockOfBikes__Retro__bg1 {
   display: flex;
   min-height: 600px;
   flex: 0 0 33.333%;
-  background: url("../../img/contain_logo3.jpg") no-repeat center/cover; }
+  background: url("../img/contain_logo3.jpg") no-repeat center/cover; }
 
 .commonBlockOfBikes .commonBlockOfBikes__Retro .common__block__bg {
-  background: url("../../img/bike3.jpg") no-repeat center/cover; }
+  background: url("../img/bike3.jpg") no-repeat center/cover; }
 
 .commonBlockOfBikes .commonBlockOfBikes__Retro .commonBlockOfBikes__Retro__bg2 {
   display: flex;
   min-height: 600px;
   flex: 0 0 33.333%;
-  background: url("../../img/bike4.jpg") no-repeat center/cover; }
+  background: url("../img/bike4.jpg") no-repeat center/cover; }
 
 @media (max-width: 1100px) {
   .commonBlockOfBikes .commonBlockOfBikes__row {
@@ -335,7 +335,7 @@ h1, h2 {
       color: #fff;
       height: 54px; }
       .shopCommonBlock .shopBlock .shopSlider .shopSlider__wrap .shopSlider__common .shopSlider__size .shopSlider__showWrap .shopSlider__show {
-        background: url("../../img/icons/icon_bike_hover.png") no-repeat top center;
+        background: url("../img/icons/icon_bike_hover.png") no-repeat top center;
         display: block;
         padding-top: 40px; }
     .shopCommonBlock .shopBlock .shopSlider .shopSlider__wrap .shopSlider__common a:hover .shopSlider__size {
