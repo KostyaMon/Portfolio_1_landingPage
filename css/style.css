@@ -81,10 +81,14 @@ h1, h2 {
   letter-spacing: 0.2em;
   color: #353738; }
 
+@media (max-width: 768px) {
+  .wrapper {
+    font-size: 2rem; } }
+
 .header {
   padding-top: 35px;
   height: 100vh;
-  background: url("../img/header_bg.jpg") no-repeat center/cover; }
+  background: #f7f7f7 url("../img/header_bg.jpg") no-repeat center/cover; }
 
 .header__body {
   display: flex;
@@ -287,6 +291,10 @@ h1, h2 {
     height: 400px; }
   .commonBlockOfBikes .commonBlockOfBikes__Retro .commonBlockOfBikes__Retro__bg1, .commonBlockOfBikes .commonBlockOfBikes__Retro .commonBlockOfBikes__Retro__bg2 {
     flex: 0 0 100%; } }
+
+@media (max-width: 768px) {
+  .commonBlockOfBikes .common__block__text {
+    font-size: 1.8rem; } }
 
 .shopCommonBlock .shopBlock .shopBlock__preSlider {
   padding: 117px 20px 0 20px;
