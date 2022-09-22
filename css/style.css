@@ -68,7 +68,7 @@ a {
 .wrapper {
   font-size: 1.8rem;
   line-height: 1.2;
-  font-family: Lato, sans-serif;
+  font-family: Arial, sans-serif;
   color: #848789; }
 
 .container {
@@ -544,6 +544,8 @@ h1, h2 {
       display: inline-block;
       margin-right: 10px;
       margin-bottom: 10px; }
+    .footer .footer__messengers a:last-child {
+      margin-right: 0 !important; }
   .footer .footer__contact2 {
     text-align: right;
     flex: 0 0 33.333%;
@@ -551,7 +553,10 @@ h1, h2 {
     line-height: 29px; }
     .footer .footer__contact2 span {
       padding-right: 10px; }
-  @media (max-width: 768px) {
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 108px 10px 10px 10px; }
     .footer .footer__row {
       flex-flow: wrap; }
     .footer .footer__contact {
@@ -564,10 +569,9 @@ h1, h2 {
     .footer .footer__contact2 {
       padding-top: 40px;
       flex: 0 0 100%;
-      text-align: center; } }
-  @media (max-width: 360px) {
-    .footer .footer__messengers a:last-child {
-      margin-right: 0; } }
+      text-align: center; }
+    .footer .footer__messengers a {
+      margin-right: 14px; } }
 
 .content__preText {
   font-size: 2.4rem;
