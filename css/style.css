@@ -430,7 +430,7 @@ h1, h2 {
         .shopCommonBlock .shopBlock .shopSlider .shopSlider__wrap .shopSlider__common .shopSlider__block .shopSlider__size .shopSlider__showWrap {
           padding-top: 0; }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .shopCommonBlock .shopBlock .shopSlider__wrap {
     flex-direction: column; }
   .shopCommonBlock .shopBlock .shopSlider__common {
@@ -552,6 +552,8 @@ h1, h2 {
     .footer .footer__contact2 span {
       padding-right: 10px; }
   @media (max-width: 768px) {
+    .footer .footer__row {
+      flex-flow: wrap; }
     .footer .footer__contact {
       flex: 0 0 50%;
       padding-right: 5px; }
@@ -560,7 +562,9 @@ h1, h2 {
       text-align: right;
       padding-left: 5px; }
     .footer .footer__contact2 {
-      display: none; } }
+      padding-top: 40px;
+      flex: 0 0 100%;
+      text-align: center; } }
   @media (max-width: 360px) {
     .footer .footer__messengers a:last-child {
       margin-right: 0; } }
