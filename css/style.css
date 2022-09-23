@@ -578,6 +578,21 @@ h1, h2 {
     line-height: 29px; }
     .footer .footer__contact2 span {
       padding-right: 10px; }
+  .footer .icon-facebook {
+    font-size: 35px;
+    color: #537bbd; }
+    .footer .icon-facebook:hover {
+      color: #64c29e; }
+  .footer .icon-vk {
+    font-size: 35px;
+    color: dodgerblue; }
+    .footer .icon-vk:hover {
+      color: #64c29e; }
+  .footer .icon-twitter {
+    font-size: 35px;
+    color: #78cdf0; }
+    .footer .icon-twitter:hover {
+      color: #64c29e; }
 
 @media (max-width: 768px) {
   .footer {
