@@ -20,7 +20,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 //========================================== Animations
-const scrollAnim = document.querySelectorAll('.scrollAnim');
+const scrollAnim = document.querySelectorAll('.scrollAnim'); // use on active block
 
 function offset(el) {
 	const rect = el.getBoundingClientRect(),

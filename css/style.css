@@ -69,11 +69,21 @@ a {
   font-size: 1.8rem;
   line-height: 1.2;
   font-family: Lato, sans-serif;
-  color: #848789; }
-
-.container {
+  color: #848789;
   max-width: 100%;
   margin: 0 auto; }
+
+._container {
+  max-width: 1080px;
+  margin: 0 auto; }
+
+._icon-fix-size {
+  max-width: 52px;
+  max-height: 43px; }
+
+._logo-fix-size {
+  max-width: 94px;
+  max-height: 85px; }
 
 h1, h2 {
   font-weight: 700;
@@ -105,10 +115,11 @@ h1, h2 {
   .header__body .header__logo, .header__body .header__link__logo {
     flex: 0 0 94px;
     overflow: hidden; }
-    .header__body .header__logo .logo, .header__body .header__link__logo .logo {
-      max-width: 100%; }
   .header__body .header__logo {
     display: none; }
+    .header__body .header__logo ._logo-fix-size {
+      max-width: 65px;
+      max-height: 58px; }
   .header__body .header__burger {
     display: none; }
   .header__body .header__list {
@@ -217,9 +228,7 @@ h1, h2 {
 .newGeneration {
   background-color: #f7f7f7;
   padding: 117px 0 140px 0; }
-  .newGeneration .newGeneration__container {
-    max-width: 1080px;
-    margin: 0 auto;
+  .newGeneration .newGeneration__body {
     overflow: hidden; }
   .newGeneration .newGeneration__img {
     margin-bottom: 35px;
@@ -232,7 +241,7 @@ h1, h2 {
   .newGeneration ._active .newGeneration__text {
     transition: all 0.8s ease 0.4s; }
   @media (max-width: 1100px) {
-    .newGeneration .newGeneration__container {
+    .newGeneration .newGeneration__body {
       padding: 0 20px; } }
   @media (max-width: 768px) {
     .newGeneration h1 {
@@ -351,11 +360,11 @@ h1, h2 {
 .shopCommonBlock .shopBlock .shopBlock__preSlider {
   padding: 117px 20px 0 20px;
   background-color: #f7f7f7; }
-  .shopCommonBlock .shopBlock .shopBlock__preSlider .shopBlock__container {
-    max-width: 1080px;
-    margin: 0 auto; }
   .shopCommonBlock .shopBlock .shopBlock__preSlider .shopBlock__img {
     margin-bottom: 30px; }
+    .shopCommonBlock .shopBlock .shopBlock__preSlider .shopBlock__img img {
+      max-width: 32px;
+      max-height: 27px; }
   .shopCommonBlock .shopBlock .shopBlock__preSlider h2 {
     padding-bottom: 30px;
     font-weight: 700;
@@ -491,7 +500,6 @@ h1, h2 {
         color: black; }
 
 .submissionForm {
-  text-align: center;
   margin: 110px 0; }
   .submissionForm .submissionForm__img {
     margin-bottom: 35px; }
@@ -547,9 +555,6 @@ h1, h2 {
 .footer {
   padding: 108px 20px;
   background-color: #f7f7f7; }
-  .footer .footer__container {
-    max-width: 1080px;
-    margin: 0 auto; }
   .footer .footer__row {
     display: flex;
     justify-content: space-between; }
@@ -578,6 +583,12 @@ h1, h2 {
     line-height: 29px; }
     .footer .footer__contact2 span {
       padding-right: 10px; }
+    .footer .footer__contact2 .author-name {
+      padding-right: 0;
+      font-family: "PT Sans", sans-serif;
+      font-weight: 700;
+      color: #4a4645;
+      font-size: 2rem; }
   .footer .icon-facebook {
     font-size: 35px;
     color: #537bbd; }
