@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/lato-regular.eot");
+  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/lato-light.eot");
+  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/lato-bold.eot");
+  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/lato-italic.eot");
+  src: url("../fonts/Lato/lato-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-italic.woff2") format("woff2"), url("../fonts/Lato/lato-italic.woff") format("woff"), url("../fonts/Lato/lato-italic.ttf") format("truetype"), url("../fonts/Lato/lato-italic.svg") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/PT_Sans/ptsans-bold.eot");
+  src: url("../fonts/PT_Sans/ptsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans/ptsans-bold.woff2") format("woff2"), url("../fonts/PT_Sans/ptsans-bold.woff") format("woff"), url("../fonts/PT_Sans/ptsans-bold.ttf") format("truetype"), url("../fonts/PT_Sans/ptsans-bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
 * {
   padding: 0;
   margin: 0;
@@ -72,6 +107,7 @@ a {
   font-size: 1.8rem;
   line-height: 1.2;
   font-family: Lato, sans-serif;
+  font-weight: 400;
   color: #848789;
   max-width: 100%;
   margin: 0 auto;
@@ -381,7 +417,6 @@ h1, h2 {
       max-height: 27px; }
   .shopCommonBlock .shopBlock .shopBlock__preSlider h2 {
     padding-bottom: 30px;
-    font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: none; }
     .shopCommonBlock .shopBlock .shopBlock__preSlider h2 span {
@@ -576,11 +611,12 @@ h1, h2 {
     flex: 0 0 33.333%; }
     .footer .footer__contact .footer__AOD {
       font-size: 1.6rem;
-      line-height: 18px;
+      line-height: 1.4;
       font-weight: 700; }
     .footer .footer__contact .footer__info {
       font-size: 1.4rem;
-      font-style: italic; }
+      font-style: italic;
+      line-height: 1.4; }
   .footer .footer__messengers {
     text-align: center;
     flex: 0 0 33.333%; }
