@@ -18,29 +18,29 @@
 	<body>
 	<div class="wrapper">
 
-		<header class="header parallaxie">
-			<div class="container parallax__container">
-				<div class="header__body">
-					<a href="" class="header__logo">
-						<img class="_logo-fix-size" src="img/logo.png" alt="logo">
-					</a>
+		<header class="header">
+			<div class="header__body">
+				<a href="" class="header__logo">
+					<img class="_logo-fix-size" src="img/logo.png" alt="logo">
+				</a>
+				<div class="header__menu menu">
 					<div class="header__burger">
 						<span></span>
 					</div>
-					<nav class="header__menu">
-						<ul class="header__list">
-							<li><a href="#aboutUs" class="header__link">about us</a></li>
-							<li class="header__link__point">.</li>
-							<li><a href="#work" class="header__link">work</a></li>
-							<li class="header__link__logo__wrap">
-								<a href="#" class="header__link__logo">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a data-goto=".newGeneration" href="#" class="menu__link">about us</a></li>
+							<li class="menu__point">.</li>
+							<li><a data-goto=".work" href="#" class="menu__link">work</a></li>
+							<li class="menu__logo-wrap">
+								<a href="#" class="menu__logo">
 									<img class="_logo-fix-size" src="img/logo.png" alt="logo">
 								</a>
 							</li>
-							<li class="header__link__dot">.</li>
-							<li><a href="#shop" class="header__link">shop</a></li>
-							<li class="header__link__point">.</li>
-							<li><a href="#contact" class="header__link">contact</a></li>
+							<li class="menu__dot">.</li>
+							<li><a data-goto="#shop" href="#" class="menu__link">shop</a></li>
+							<li class="menu__point">.</li>
+							<li><a data-goto="#contact" href="#" class="menu__link">contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -48,17 +48,18 @@
 		</header>
 
 		<div class="content">
-			<div class="newGeneration" id="aboutUs">
+			<div class="fullscreen parallaxie"></div>
+			<div class="newGeneration">
 				<div class="newGeneration__body _container scrollAnim">
 					<div class="newGeneration__img showAnim">
 						<img class="_icon-fix-size" src="./img/icons/content_icon1.png" alt="content_icon1">
 					</div>
 						<h1 class="showAnim">A NEW GENERATION OF VINTAGE BIKE</h1>
-						<div class="newGeneration__text showAnim">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+						<div class="newGeneration__text showAnim">Lorem  Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
 					</div>
 			</div>
 
-			<div class="commonBlockOfBikes" id="work">
+			<div class="commonBlockOfBikes work" id="work">
 
 				<div class="commonBlockOfBikes__vintage">
 					<div class="commonBlockOfBikes__row">

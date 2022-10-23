@@ -1,16 +1,55 @@
 $(document).ready(function () {
-    $(".header__burger").click(function () {
-        $(".header__burger, .header__menu").toggleClass("active");
-        $("body").toggleClass("lock");
-    });
-     $(".header__link").click(function () {
-         $(".header__burger, .header__menu").removeClass("active");
-         $("body").removeClass("lock");
-    });
      $('.parallaxie').parallaxie({
     speed: 0.4,
     });
 });
+//Burger
+const iconMenu = document.querySelector(".header__burger");
+const menuBody = document.querySelector(".menu__body");
+if (iconMenu) {
+	iconMenu.addEventListener("click", function () {
+		document.body.classList.toggle("_lock");
+		iconMenu.classList.toggle("_menuActive");
+		menuBody.classList.toggle("_menuActive");
+	})
+}
+
+// Smooth Scroll
+const menuLinks = document.querySelectorAll(".menu__link[data-goto]")
+
+if(menuLinks.length > 0) {
+	menuLinks.forEach(menuLink => {
+		menuLink.addEventListener("click", onMenuLinkClick)
+	});
+
+	function onMenuLinkClick(e) {
+		const mediaQuery768 = window.matchMedia('(max-width: 768px)')
+		const menuLink = e.target;
+		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			const gotoBlockValueHeaderOffset = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top;
+			
+			if (iconMenu.classList.contains("_menuActive")) {
+				document.body.classList.remove("_lock");
+				iconMenu.classList.remove("_menuActive");
+				menuBody.classList.remove("_menuActive");
+			}
+			
+			e.preventDefault();
+				window.scrollTo({
+					top: gotoBlockValue,
+					behavior: "smooth"
+				});
+				if (mediaQuery768.matches) {
+				window.scrollTo({
+					top: gotoBlockValueHeaderOffset,
+					behavior: "smooth"
+				});
+			}
+		}
+	}
+}
 
 const swiper = new Swiper('.swiper', {
     pagination: {
@@ -58,3 +97,4 @@ setTimeout(() => {
 	animOnScroll()
 }, 300)
 //========================================== End Animations
+
