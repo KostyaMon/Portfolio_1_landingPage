@@ -276,10 +276,10 @@ h1, h2 {
 
 .newGeneration {
   position: relative;
-  background-color: #f7f7f7;
-  padding: 117px 0 140px 0; }
+  background-color: #f7f7f7; }
   .newGeneration .newGeneration__body {
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 117px 15px 140px; }
   .newGeneration .newGeneration__img {
     margin-bottom: 35px;
     transition: all 0.8s  ease 0s; }
@@ -290,12 +290,12 @@ h1, h2 {
     transition: all 0.8s ease 0.2s; }
   .newGeneration ._active .newGeneration__text {
     transition: all 0.8s ease 0.4s; }
-  @media (max-width: 1100px) {
-    .newGeneration .newGeneration__body {
-      padding: 0 20px; } }
   @media (max-width: 768px) {
     .newGeneration h1 {
       font-size: 2.1rem; } }
+  @media (max-width: 620px) {
+    .newGeneration .newGeneration__body {
+      padding: 60px 15px; } }
 
 .commonBlockOfBikes .commonBlockOfBikes__row {
   display: flex; }
@@ -314,7 +314,6 @@ h1, h2 {
 
 .commonBlockOfBikes .common__bg {
   flex: 0 0 66.666%;
-  display: flex;
   min-height: 600px; }
 
 .commonBlockOfBikes .common__block__img {
@@ -407,6 +406,16 @@ h1, h2 {
   .commonBlockOfBikes .common__block__text {
     font-size: 1.8rem; } }
 
+@media (max-width: 620px) {
+  .commonBlockOfBikes .common__bg, .commonBlockOfBikes .commonBlockOfBikes__Retro__bg1 {
+    min-height: 400px !important; }
+  .commonBlockOfBikes .common__block__img {
+    margin-top: 38px; } }
+
+@media (max-width: 480px) {
+  .commonBlockOfBikes .commonBlockOfBikes__Retro__bg2 {
+    min-height: 450px !important; } }
+
 .shopCommonBlock .shopBlock .shopBlock__preSlider {
   padding: 117px 20px 0 20px;
   background-color: #f7f7f7; }
@@ -423,15 +432,21 @@ h1, h2 {
       font-weight: 300;
       color: #848789; }
   .shopCommonBlock .shopBlock .shopBlock__preSlider .shopBlock__text {
-    padding-bottom: 105px; }
+    padding-bottom: 37px; }
   .shopCommonBlock .shopBlock .shopBlock__preSlider ._active .shopBlock__subTitle {
     transition: all 0.8s ease 0.2s; }
   .shopCommonBlock .shopBlock .shopBlock__preSlider ._active .shopBlock__text {
     transition: all 0.8s ease 0.4s; }
 
+@media (max-width: 620px) {
+  .shopCommonBlock .shopBlock .shopBlock__preSlider {
+    padding-top: 68px; }
+  .shopCommonBlock .shopBlock .shopBlock__text {
+    padding-bottom: 0 !important; } }
+
 .shopCommonBlock .shopBlock .shopSlider .shopSlider__pagination {
   background-color: #f7f7f7;
-  padding-bottom: 68px;
+  padding: 68px 0;
   position: static; }
   .shopCommonBlock .shopBlock .shopSlider .shopSlider__pagination .swiper-pagination-bullet {
     width: 16px;
@@ -548,62 +563,74 @@ h1, h2 {
         background: #f7f7f7;
         color: black; }
 
-.submissionForm {
-  margin: 110px 0; }
-  .submissionForm .submissionForm__img {
-    margin-bottom: 35px; }
-  .submissionForm .submissionForm__text {
-    margin-bottom: 35px; }
+.submissionForm .submissionForm__body {
+  padding: 110px 0; }
+
+.submissionForm .submissionForm__img {
+  margin-bottom: 35px; }
+
+.submissionForm .submissionForm__text {
+  margin-bottom: 35px; }
+
+.submissionForm .submissionForm__form__input {
+  margin-right: 4px;
+  vertical-align: top;
+  display: inline-block;
+  padding: 28px;
+  width: 400px;
+  background-color: #ffffff;
+  border: 1px solid #d3d7d9; }
+  .submissionForm .submissionForm__form__input::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: #929292;
+    opacity: 0.4; }
+  .submissionForm .submissionForm__form__input:focus {
+    border: 1px solid #64c29e;
+    transition: 0.1s ease 0s; }
+
+.submissionForm button {
+  display: inline-block;
+  padding: 25px 50px;
+  background-color: #64c29e;
+  font-size: 2.4rem;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff; }
+  .submissionForm button:hover {
+    background-color: seagreen;
+    transition: all 0.3s ease 0s; }
+
+.submissionForm .showAnimPhoto {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.8s ease 0s; }
+
+.submissionForm ._active .showAnimPhoto {
+  transform: scale(1);
+  opacity: 1; }
+
+.submissionForm ._active .submissionForm__text {
+  transition: all 0.8s ease 0.2s; }
+
+@media (max-width: 660px) {
+  .submissionForm .submissionForm__body {
+    padding: 60px 0; }
   .submissionForm .submissionForm__form__input {
-    margin-right: 4px;
-    vertical-align: top;
-    display: inline-block;
-    padding: 28px;
-    width: 400px;
-    background-color: #ffffff;
-    border: 1px solid #d3d7d9; }
-    .submissionForm .submissionForm__form__input::placeholder {
-      font-size: 20px;
-      font-weight: 400;
-      font-style: italic;
-      color: #929292;
-      opacity: 0.4; }
-    .submissionForm .submissionForm__form__input:focus {
-      border: 1px solid #64c29e;
-      transition: 0.1s ease 0s; }
+    width: 250px; } }
+
+@media (max-width: 460px) {
+  .submissionForm .submissionForm__form__input {
+    padding: 28px 12px 28px 12px;
+    max-width: 200px; }
   .submissionForm button {
-    display: inline-block;
-    padding: 25px 50px;
-    background-color: #64c29e;
-    font-size: 2.4rem;
-    line-height: 24px;
-    font-weight: 300;
-    color: #ffffff; }
-    .submissionForm button:hover {
-      background-color: seagreen;
-      transition: all 0.3s ease 0s; }
-  .submissionForm .showAnimPhoto {
-    transform: scale(0);
-    opacity: 0;
-    transition: all 0.8s ease 0s; }
-  .submissionForm ._active .showAnimPhoto {
-    transform: scale(1);
-    opacity: 1; }
-  .submissionForm ._active .submissionForm__text {
-    transition: all 0.8s ease 0.2s; }
-  @media (max-width: 660px) {
-    .submissionForm .submissionForm__form__input {
-      width: 250px; } }
-  @media (max-width: 460px) {
-    .submissionForm .submissionForm__form__input {
-      padding: 28px 12px 28px 12px;
-      max-width: 200px; }
-    .submissionForm button {
-      padding: 25px 30px; } }
+    padding: 25px 30px; } }
 
 .footer {
-  padding: 108px 20px;
   background-color: #f7f7f7; }
+  .footer .footer__body {
+    padding: 108px 15px; }
   .footer .footer__row {
     display: flex;
     justify-content: space-between; }
@@ -656,23 +683,23 @@ h1, h2 {
       color: #64c29e; }
 
 @media (max-width: 768px) {
-  .footer {
-    padding: 108px 10px 10px 10px; }
-    .footer .footer__row {
-      flex-flow: wrap; }
-    .footer .footer__contact {
-      flex: 0 0 50%;
-      padding-right: 5px; }
-    .footer .footer__messengers {
-      flex: 0 0 50%;
-      text-align: right;
-      padding-left: 5px; }
-    .footer .footer__contact2 {
-      padding-top: 40px;
-      flex: 0 0 100%;
-      text-align: center; }
-    .footer .footer__messengers a {
-      margin-right: 14px; } }
+  .footer .footer__body {
+    padding: 40px 10px 10px 10px; }
+  .footer .footer__row {
+    flex-flow: wrap; }
+  .footer .footer__contact {
+    flex: 0 0 50%;
+    padding-right: 5px; }
+  .footer .footer__messengers {
+    flex: 0 0 50%;
+    text-align: right;
+    padding-left: 5px; }
+  .footer .footer__contact2 {
+    padding: 40px 0 10px 0;
+    flex: 0 0 100%;
+    text-align: center; }
+  .footer .footer__messengers a {
+    margin-right: 14px; } }
 
 .content__preText {
   font-size: 2.4rem;

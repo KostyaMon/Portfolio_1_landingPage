@@ -38,15 +38,9 @@ if(menuLinks.length > 0) {
 			
 			e.preventDefault();
 				window.scrollTo({
-					top: gotoBlockValue,
+					top: mediaQuery768.matches ? gotoBlockValueHeaderOffset : gotoBlockValue,
 					behavior: "smooth"
 				});
-				if (mediaQuery768.matches) {
-				window.scrollTo({
-					top: gotoBlockValueHeaderOffset,
-					behavior: "smooth"
-				});
-			}
 		}
 	}
 }

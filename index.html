@@ -30,7 +30,7 @@
 						<ul class="menu__list">
 							<li class="menu__item"><a data-goto=".newGeneration" href="#" class="menu__link">about us</a></li>
 							<li class="menu__point">.</li>
-							<li><a data-goto=".work" href="#" class="menu__link">work</a></li>
+							<li><a data-goto="#work" href="#" class="menu__link">work</a></li>
 							<li class="menu__logo-wrap">
 								<a href="#" class="menu__logo">
 									<img class="_logo-fix-size" src="img/logo.png" alt="logo">
@@ -47,7 +47,9 @@
 		</header>
 
 		<div class="content">
+
 			<div class="fullscreen parallaxie"></div>
+
 			<div class="newGeneration">
 				<div class="newGeneration__body _container scrollAnim">
 					<div class="newGeneration__img showAnim">
@@ -58,7 +60,7 @@
 					</div>
 			</div>
 
-			<div class="commonBlockOfBikes work" id="work">
+			<div class="commonBlockOfBikes" id="work">
 
 				<div class="commonBlockOfBikes__vintage">
 					<div class="commonBlockOfBikes__row">
@@ -328,22 +330,25 @@
 				</div>
 			</div>
 
-			<div class="submissionForm">
-				<div class="submissionForm__pre scrollAnim">
-					<div class="submissionForm__img showAnimPhoto">
-						<img class="_logo-fix-size" src="./img/logo.png" alt="logo">
+			<div class="submissionForm" id="contact">
+				<div class="submissionForm__body">
+					<div class="submissionForm__pre scrollAnim">
+						<div class="submissionForm__img showAnimPhoto">
+							<img class="_logo-fix-size" src="./img/logo.png" alt="logo">
+						</div>
+						<div class="submissionForm__text content__preText showAnim">Stay on the saddle!</div>
 					</div>
-					<div class="submissionForm__text content__preText showAnim">Stay on the saddle!</div>
-				</div>
 
-				<form class="submissionForm__form scrollAnim" action="#">
-					<input class="submissionForm__form__input showAnim" type="text" placeholder="enter your email...">
-					<button class="showAnim">GO</button>
-				</form>
+					<form class="submissionForm__form scrollAnim" action="#">
+						<input class="submissionForm__form__input showAnim" type="text" placeholder="enter your email...">
+						<button class="showAnim">GO</button>
+					</form>
+				</div>
 			</div>
+
 		</div>
 
-		<footer class="footer" id="contact">
+		<footer class="footer">
 			<div class="footer__body _container">
 				<div class="footer__row">
 					<div class="footer__contact">
